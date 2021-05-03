@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server/issues"
   },
-  "homepage": "https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server#readme"
+  "homepage": "https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
