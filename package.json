@@ -1,0 +1,19 @@
+{
+  "name": "code-your-first-api-with-nodejs-and-express-set-up-the-server",
+  "version": "1.0.0",
+  "description": "In this tutorial, we'll set up a server for our API to live on. We'll use Node.js, which is the back-end implementation of JavaScript, and Express, a popular, minimal framework for Node.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server/issues"
+  },
+  "homepage": "https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server#readme"
+}
