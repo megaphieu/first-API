@@ -1,13 +1,13 @@
-// JSON data
+// fake some JSON data
 const users = [{
         id: 1,
-        name: "Richard Hendricks",
-        email: "richard@piedpiper.com",
+        name: "megaphieu",
+        email: "megaphieu@gmail.com",
     },
     {
         id: 2,
-        name: "Bertram Gilfoyle",
-        email: "gilfoyle@piedpiper.com",
+        name: "TTP",
+        email: "17520883@gm.uit.edu.vn",
     },
 ];
 

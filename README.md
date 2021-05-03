@@ -11,3 +11,13 @@ Available on [Envato Tuts+](https://tutsplus.com). Teaching skills to millions w
 
 [published url]: http://code.tutsplus.com/tutorials/code-your-first-api-with-nodejs-and-express-set-up-the-server--cms-31698
 [instructor url]: https://tutsplus.com/authors/tania-rascia
+
+
+# HOW TO XÀI:
+- Mở Terminal trong VSCode.
+- Gõ "node app.js".
+- mở "http://localhost:3002/" trong trình duyệt.
+
+## Danh sách các APIs:
+- http://localhost:3002/users
+- ...
