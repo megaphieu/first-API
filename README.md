@@ -13,5 +13,6 @@ Instructor: [Tania Rascia][instructor url]
 - mở "http://localhost:3002/" trong trình duyệt.
 
 # Danh sách các APIs:
-- http://localhost:3002/users
+- /users
+- /users/{id}
 - ...
