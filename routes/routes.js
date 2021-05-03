@@ -1,5 +1,6 @@
 // fake some JSON data
-const users = [{
+const users = [
+    {
         id: 1,
         name: "megaphieu",
         email: "megaphieu@gmail.com",
@@ -12,17 +13,28 @@ const users = [{
 ];
 
 // Router
-const router = app => {
-    app.get('/', (request, response) => {
+const router = (app) => {
+    app.get("/", (request, response) => {
         response.send({
-            message: 'Node.js and Express REST API'
+            message: "Node.js and Express REST API",
         });
     });
 
-    app.get('/users', (request, response) => {
+    app.get("/users", (request, response) => {
         response.send(users);
     });
-}
+
+    // Display a single user by ID
+    app.get("/users/:id", (request, response) => {
+        const id = request.params.id;
+
+        // pool.query("SELECT * FROM users WHERE id = ?", id, (error, result) => {
+        //     if (error) throw error;
+
+        //     response.send(result);
+        // });
+    });
+};
 
 // Export the router
 module.exports = router;
