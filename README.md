@@ -1,5 +1,6 @@
 # Refs:
 Envato Tuts+ Tutorial: [Code Your First API With Node.js and Express: Set Up the Server][published url]
+
 Instructor: [Tania Rascia][instructor url]
 
 In this tutorial, we'll set up a server for our API to live on. We'll use Node.js, which is the back-end implementation of JavaScript, and Express, a popular, minimal framework for Node.
