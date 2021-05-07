@@ -9,7 +9,6 @@ const app = express();
 const mongoose = require("mongoose");
 const Player = require("./models/players");
 
-console.log("trying to connect...");
 mongoose
     .connect("mongodb://localhost:27017/first-api", {
         useNewUrlParser: true,
@@ -17,8 +16,6 @@ mongoose
     })
     .then(() => console.log("successfully connected to mongodb"))
     .catch((err) => console.log("error:", err));
-
-if (err) return console.log(`Error: ${err}`);
 
 // Use Node.js body parsing middleware
 app.use(bodyParser.json());
@@ -35,4 +32,13 @@ const server = app.listen(port, (error) => {
     console.log(
         `Server listening on port: http://localhost:${server.address().port}/`
     );
+    if (error) return console.log(`Error: ${error}`);
+
+    // NEED TO CHECK EXISTENCE BEFORE ADDING
+    // const newPlayer = new Player({
+    //     _id: "megaphieu2",
+    //     pcoin: 1000,
+    // });
+
+    // newPlayer.save().then(console.log("1 player created. yay!!"));
 });

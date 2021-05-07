@@ -1,16 +1,14 @@
-// fake some JSON data
-const users = [
-    {
-        id: 1,
-        name: "megaphieu",
-        email: "megaphieu@gmail.com",
-    },
-    {
-        id: 2,
-        name: "TTP",
-        email: "17520883@gm.uit.edu.vn",
-    },
-];
+const mongoose = require("mongoose");
+const Player = require("../models/players");
+
+// mongoose
+//     .connect("mongodb://localhost:27017/first-api", {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//     })
+//     .then(() => console.log("successfully connected to mongodb!"))
+//     .catch((err) => console.log("error:", err));
+
 
 // Router
 const router = (app) => {
@@ -20,19 +18,15 @@ const router = (app) => {
         });
     });
 
-    app.get("/users", (request, response) => {
-        response.send(users);
+    // Get all players
+    app.get("/players", (request, response) => {
+        Player.find().then(players => console.log(players))
     });
 
-    // Display a single user by ID
-    app.get("/users/:id", (request, response) => {
+    // Get 1 player
+    app.get("/players/:id", (request, response) => {
         const id = request.params.id;
-
-        // pool.query("SELECT * FROM users WHERE id = ?", id, (error, result) => {
-        //     if (error) throw error;
-
-        //     response.send(result);
-        // });
+        Player.find().then(players => console.log(players))
     });
 };
 
