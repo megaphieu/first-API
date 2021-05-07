@@ -1,15 +1,6 @@
 const mongoose = require("mongoose");
 const Player = require("../models/players");
 
-// mongoose
-//     .connect("mongodb://localhost:27017/first-api", {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true,
-//     })
-//     .then(() => console.log("successfully connected to mongodb!"))
-//     .catch((err) => console.log("error:", err));
-
-
 // Router
 const router = (app) => {
     app.get("/", (request, response) => {
