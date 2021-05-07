@@ -10,18 +10,17 @@ const router = (app) => {
     });
 
     // Get all players
-    app.get("/players", (request, response) => {
-        Player.find().then((players) => {
-            response.send(players);
+    app.get("/players", async (request, response) => {
+        await Player.find().then((r) => {
+            response.send(r);
         });
     });
 
     // Get player by id
-    app.get("/players/:id", (request, response) => {
+    app.get("/players/:id", async (request, response) => {
         const id = request.params.id;
-        let query = { _id: id };
-        Player.find(query).then((players) => {
-            response.send(players);
+        await Player.findById(id).then((r) => {
+            response.send(r);
         });
     });
 };

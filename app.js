@@ -33,12 +33,4 @@ const server = app.listen(port, (error) => {
         `Server listening on port: http://localhost:${server.address().port}/`
     );
     if (error) return console.log(`Error: ${error}`);
-
-    // NEED TO CHECK EXISTENCE BEFORE ADDING
-    // const newPlayer = new Player({
-    //     _id: "megaphieu2",
-    //     pcoin: 1000,
-    // });
-
-    // newPlayer.save().then(console.log("1 player created. yay!!"));
 });
