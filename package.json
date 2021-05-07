@@ -18,6 +18,11 @@
   "homepage": "https://github.com/tutsplus/code-your-first-api-with-nodejs-and-express-set-up-the-server#readme",
   "dependencies": {
     "express": "^4.17.1",
+<<<<<<< HEAD
+    "mongoose": "^5.12.7",
+    "nodemon": "^2.0.7"
+=======
     "mongoose": "^5.12.7"
+>>>>>>> 4c8fca05d4417d5e9a176a0d1ec4690096233c8f
   }
 }
