@@ -2,13 +2,19 @@
 const express = require("express");
 const port = 3002;
 const bodyParser = require("body-parser");
-const routes = require("./routes/routes");
+const routes = require("./controllers/routes");
 const app = express();
 
-var mongoose = require("mongoose");
+// Mongodb
+const mongoose = require("mongoose");
+const Player = require("./models/players");
+
 console.log("trying to connect...");
 mongoose
-    .connect("mongodb://localhost:27017/first-api", { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect("mongodb://localhost:27017/first-api", {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
     .then(() => console.log("successfully connected to mongodb"))
     .catch((err) => console.log("error:", err));
 
@@ -29,5 +35,4 @@ const server = app.listen(port, (error) => {
     console.log(
         `Server listening on port: http://localhost:${server.address().port}/`
     );
-console.log();
 });

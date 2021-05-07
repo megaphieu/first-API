@@ -25,7 +25,6 @@ const router = (app) => {
     });
 
     // Display a single user by ID
-    // Dấu ":" thể hiện "id" là 1 parameter.
     app.get("/users/:id", (request, response) => {
         const id = request.params.id;
 
