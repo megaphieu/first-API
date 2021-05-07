@@ -11,13 +11,18 @@ const router = (app) => {
 
     // Get all players
     app.get("/players", (request, response) => {
-        Player.find().then(players => console.log(players))
+        Player.find().then((players) => {
+            response.send(players);
+        });
     });
 
-    // Get 1 player
+    // Get player by id
     app.get("/players/:id", (request, response) => {
         const id = request.params.id;
-        Player.find().then(players => console.log(players))
+        let query = { _id: id };
+        Player.find(query).then((players) => {
+            response.send(players);
+        });
     });
 };
 
