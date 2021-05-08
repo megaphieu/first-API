@@ -1,6 +1,6 @@
 // Require packages and set the port
 const express = require("express");
-const port = 3002;
+const port = 8080;
 const bodyParser = require("body-parser");
 const routes = require("./controllers/routes");
 const app = express();
@@ -24,7 +24,6 @@ app.use(
         extended: true,
     })
 );
-
 routes(app);
 
 // Start the server
